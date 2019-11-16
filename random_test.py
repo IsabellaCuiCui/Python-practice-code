@@ -1,4 +1,6 @@
 # 用于测试random模块中各类函数的效果
+#本例涉及的函数:random.random() / uniform() / randint() / choice() / shuffle()
+
 import random
 
 a = random.random() #用于生成一个随机的0~1之间的浮点数
