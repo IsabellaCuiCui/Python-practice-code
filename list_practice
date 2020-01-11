@@ -1,0 +1,43 @@
+"""
+关于列表的基本操作
+"""
+
+list1 = ["中国", "美国", 1997, 2001]
+list2 = ["中国", "美国", 1997, 2001]
+
+#删除元素的三种方法
+del list1[2]
+print("After deleting a value:")
+print(list1)
+list1 = list2
+
+list1.remove(1997)
+print("After deleting a value:")
+print(list1)
+list1 = list2
+
+list1.pop(2)
+list1.pop() #默认删除最后一个元素
+print("After deleting two values:")
+print(list1)
+
+#添加列表元素
+list1.append(2003)
+print("After appending an element:")
+print(list1)
+
+#定义多维列表
+rows = 3
+cols=4
+matrix = [[0 for col in range(cols)] for row in range(rows)]
+for i in range(rows):
+  for j in range(cols):
+		matrix[i][j] = i* 3 + j
+		print(matrix[i][j], end = ',')
+	print('\n')
+"""
+输出结果：
+0,1,2,3,
+3,4,5,6,
+6,7,8,9,
+"""
